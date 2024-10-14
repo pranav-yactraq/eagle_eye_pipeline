@@ -1,0 +1,11 @@
+curl --request GET \
+  --url https://api.c005.eagleeyenetworks.com/api/v3.0/downloads/${downloadId}:download \
+  --header 'authorization: Bearer ${process.env.ACCESS_TOKEN}' --output ${name}
+
+
+
+
+
+curl --request GET \
+  --url https://api.c005.eagleeyenetworks.com/api/v3.0/downloads/265c3ba3-98fa-4c6c-a665-fb5b37d712b8:download \
+  --header 'authorization: Bearer eyJraWQiOiI2ODYxYjBjYS0wZjI2LTExZWQtODYxZC0wMjQyYWMxMjAwMDIiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjYTBjZjdlZSIsImF1ZCI6InZtcy5hcGkiLCJzY29wZSI6InZtcy5hbGwiLCJpc3MiOiJ2bXMuYXV0aC52MSIsInZtc19hY2NvdW50IjoiMDAwMjQ1NjQiLCJleHAiOjE3Mjg0OTA5NTUsImlhdCI6MTcyODQ0Nzc1NywianRpIjoiZDliYmRlZjFiMmQzYzVlNjY4NjZmODk4MmJkZGIwMTciLCJjbGllbnRfaWQiOiI4ZjE4ZDliYjYxZGE0ODE5OWY3MTEyMmRmNGY5MzE2MSIsInZtc19jbHVzdGVyIjoiYzAwNSJ9.H_qDVPaW5dW1tNtDqBPkiI6UnY0kxopdYoA5SBbltu62A-n_lCi7KNAktvXaEEhFqZF4Y2pFO0tCO4l1jpRH32EWgIK3Z03yrYH-T-Xaj2BfRXO0_b809KuN2r_LUkQoU3LXcsutYUJJWGj7SCcmi04CmBiKJLOdIHchml8NgxzWBR5qNqU-PqwtHfCbwbGYi2DtN_3twmLdXrr0r38qFWIx_1ue0fYS1k8UHx7n2yyG4nMm2_VJrIm_rFAd-uHqrlCPEow2PwYnJpmQmMAK0I5tEZ2ZmQXnz8OF8j2Y5Xj65s9pnqO8mm6Nst_L2ieWyLGIK4NUuk9tQgfxc0176A' --output recordings.mp4
