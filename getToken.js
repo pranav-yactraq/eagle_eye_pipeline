@@ -1,19 +1,6 @@
-const fetch = require('node-fetch');
 require('dotenv').config();
-//three parts for getting tokens
-//To avail a fresh new set of access_token and refresh_token 
 
-
-
-
-
-
-//First Step
-//call this url from a broswer placing proper client_id and redirect_uri ,redirect_uri needs to be whitelisted in eagle eye dashboard console for our user. 
-
-
-
-
+//call this url from a browser placing proper client_id and redirect_uri ,redirect_uri needs to be whitelisted in eagle eye dashboard console for our user. 
 var s = `https://auth.eagleeyenetworks.com/oauth2/authorize?scope=vms.all&client_id=${process.env.CLIENT_ID}&response_type=code&redirect_uri=http://localhost:3333/`  
 
 console.log(s);
@@ -68,6 +55,9 @@ const refreshToken = async (refresh_token) => {
     }
 };
 
+var fetchedCode = "";
 
+getToken(fetchedCode);
+refreshToken(process.env.REFRESH_TOKEN);
 
 
